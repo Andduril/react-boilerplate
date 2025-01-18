@@ -1,3 +1,4 @@
+import LoginForm from './components/forms/LoginForm';
 import { Button } from './components/ui/button';
 import useCountStore from './stores/countStore';
 
@@ -14,6 +15,7 @@ const App = () => {
       <h1 className="text-9xl">React App</h1>
       <p className="text-4xl">Count: {count}</p>
       <Button onClick={handleClick}>Increment</Button>
+      <LoginForm />
     </main>
   );
 };
