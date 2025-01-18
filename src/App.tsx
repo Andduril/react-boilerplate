@@ -1,5 +1,5 @@
-import { Button } from "./components/ui/button";
-import useCountStore from "./stores/countStore";
+import { Button } from './components/ui/button';
+import useCountStore from './stores/countStore';
 
 const App = () => {
   const count = useCountStore((state) => state.count);
@@ -7,7 +7,7 @@ const App = () => {
 
   const handleClick = () => {
     increment();
-  }
+  };
 
   return (
     <main className="h-screen flex flex-col justify-center items-center">
