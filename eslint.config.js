@@ -19,7 +19,7 @@ export default [
     },
   },
   {
-    ignores: ['tailwind.config.js'],
+    ignores: ['tailwind.config.js', 'src/routeTree.gen.ts'],
   },
   {
     rules: {
