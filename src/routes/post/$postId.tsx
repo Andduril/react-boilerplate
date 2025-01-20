@@ -13,5 +13,5 @@ const RouteComponent = () => {
 
 export const Route = createFileRoute('/post/$postId')({
   component: RouteComponent,
-  loader: () => console.log('loading...'), // here we can fetch data later
+  loader: () => console.log('loading...'), // here we can fetch data
 });

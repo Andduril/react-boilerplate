@@ -1,4 +1,5 @@
 import { createLazyFileRoute } from '@tanstack/react-router';
+import { Suspense } from 'react';
 
 const Index = () => {
   return (
@@ -9,5 +10,9 @@ const Index = () => {
 };
 
 export const Route = createLazyFileRoute('/')({
-  component: Index,
+  component: () => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Index />
+    </Suspense>
+  ),
 });
